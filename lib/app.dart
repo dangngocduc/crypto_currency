@@ -35,6 +35,7 @@ class _AppState extends State<App> {
       builder: (context, child) {
         return ScrollConfiguration(behavior: NerverOverScroll(), child: child!);
       },
+      debugShowCheckedModeBanner: false,
       routerConfig: _router,
       theme: ThemeData.dark().copyWith(
           primaryColor: const Color(0xFF212126),
