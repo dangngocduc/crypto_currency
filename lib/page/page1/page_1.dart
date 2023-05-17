@@ -2,6 +2,7 @@ import 'package:crypto_currency/gen/assets.gen.dart';
 import 'package:crypto_currency/page/page1/portfolio_value_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../widget/line_chart_widget.dart';
 import 'header_page_sliver_persistent_delegate.dart';
@@ -47,12 +48,17 @@ class _Page1State extends State<Page1> {
             ),
             SliverList.builder(
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsets.symmetric(
+                return Padding(
+                  padding: const EdgeInsets.symmetric(
                     horizontal: 12,
                     vertical: 12,
                   ),
-                  child: ItemCoinWidget(),
+                  child: GestureDetector(
+                    onTap: () {
+                      GoRouter.of(context).push('/detail');
+                    },
+                    child: const ItemCoinWidget(),
+                  ),
                 );
               },
               itemCount: 8,

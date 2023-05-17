@@ -18,8 +18,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/group_top_right_card.svg
   String get groupTopRightCard => 'assets/icons/group_top_right_card.svg';
 
+  /// File path: assets/icons/ic_ETH.svg
+  String get icETH => 'assets/icons/ic_ETH.svg';
+
   /// File path: assets/icons/ic_arrow_up.svg
   String get icArrowUp => 'assets/icons/ic_arrow_up.svg';
+
+  /// File path: assets/icons/ic_back.svg
+  String get icBack => 'assets/icons/ic_back.svg';
+
+  /// File path: assets/icons/ic_chart.svg
+  String get icChart => 'assets/icons/ic_chart.svg';
 
   /// File path: assets/icons/ic_chart1.png
   AssetGenImage get icChart1 =>
@@ -38,7 +47,10 @@ class $AssetsIconsGen {
   List<dynamic> get values => [
         groupBottomLeftCard,
         groupTopRightCard,
+        icETH,
         icArrowUp,
+        icBack,
+        icChart,
         icChart1,
         icFilter,
         icScan,

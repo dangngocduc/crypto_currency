@@ -1,3 +1,4 @@
+import 'package:crypto_currency/page/detail_coin/coin_detail_page.dart';
 import 'package:crypto_currency/page/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -19,6 +20,12 @@ class _AppState extends State<App> {
         builder: (context, state) {
           return const HomePage();
         },
+      ),
+      GoRoute(
+        path: '/detail',
+        builder: (context, state) {
+          return const CoinDetailPage();
+        },
       )
     ],
   );
@@ -31,6 +38,8 @@ class _AppState extends State<App> {
       routerConfig: _router,
       theme: ThemeData.dark().copyWith(
           primaryColor: const Color(0xFF212126),
+          appBarTheme: const AppBarTheme(
+              backgroundColor: Color(0xFF131316), elevation: 0),
           scaffoldBackgroundColor: const Color(0xFF131316),
           primaryTextTheme: GoogleFonts.quicksandTextTheme(
               ThemeData.dark().primaryTextTheme)),
