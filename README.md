@@ -10,4 +10,4 @@ Library :
 
 | Image  | Image |
 | ------------- | ------------- |
-| ![Demo Home Page](/screen_home.png)  | ![Demo Home Page](/screen_detail.png.png)  |
+| ![Demo Home Page](/screen_home.png)  | ![Demo Home Page](/screen_detail.png)  |
