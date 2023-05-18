@@ -5,6 +5,7 @@ import 'package:crypto_currency/page/page1/page_1.dart';
 import 'package:crypto_currency/widget/line_chart_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 import 'header_widget.dart';
 
@@ -23,6 +24,9 @@ class _CoinDetailPageState extends State<CoinDetailPage> {
         leadingWidth: 64,
         leading: Center(
           child: IconActionWidget(
+            onTap: () {
+              GoRouter.of(context).pop();
+            },
             background: const Color(0xFF2C2C33),
             icon: Assets.icons.icBack,
           ),
@@ -173,7 +177,7 @@ class _CoinDetailPageState extends State<CoinDetailPage> {
                       backgroundColor: Colors.red,
                     ),
                     onPressed: () {},
-                    child: Text('Buy'),
+                    child: Text('Sell'),
                   )
                 ],
               ),
